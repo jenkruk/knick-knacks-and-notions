@@ -18,3 +18,5 @@ const StoreProvider = ({ value = [], ...props }) => {
   const useStoreContext = () => {
     return useContext(StoreContext);
   };
+
+  export { StoreProvider, useStoreContext };
