@@ -34,6 +34,7 @@ const CartItem = ({ item }) => {
     
       idbPromise('cart', 'put', { ...item, purchaseQuantity: parseInt(value) });
     }
+  };
 
   return (
     <div className="flex-row">
@@ -65,7 +66,6 @@ const CartItem = ({ item }) => {
       </div>
     </div>
   );
-}
 };
 
 export default CartItem;
